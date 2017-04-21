@@ -2,6 +2,11 @@ function fizzBuzz() {
     var resultado = [];
     for (i = 0; i < 100; i++) {
         var value = i + 1;
+        
+        if (value % 3 == 0 && value % 5 == 0) {
+            resultado[i] = "FizzBuzz";
+            continue;
+        }
 
         if (value % 3 == 0) {
             resultado[i] = "Fizz";
@@ -9,11 +14,6 @@ function fizzBuzz() {
         }
         if (value % 5 == 0) {
             resultado[i] = "Buzz";
-            continue;
-        }
-
-        if (value % 3 == 0 && value % 5 == 0) {
-            resultado[i] = "FizzBuzz";
             continue;
         }
 
