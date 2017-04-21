@@ -23,25 +23,25 @@ function fizzBuzz() {
 };
 
 
-var results = fizzBuzz();
+var resultado = fizzBuzz();
 console.log(lista);
 
 test("Retorna o total de itens", function() {
-    equal(lista.length, 100);
+    equal(resultado.length, 100);
 });
 
 test("verificação do primeiro resultado igual a 1", function() {
-    equal(lista[0], 1);
+    equal(resultado[0], 1);
 });
 
 test("print do fizz no número 3", function() {
-    equal(lista[2], "Fizz");
+    equal(resultado[2], "Fizz");
 });
 
 test("print do buzz no número 5", function() {
-    equal(lista[4], "Buzz");
+    equal(resultado[4], "Buzz");
 });
 
 test("print do fizzbuzz no número 15", function() {
-    equal(lista[14], "FizzBuzz");
+    equal(resultad[14], "FizzBuzz");
 });
