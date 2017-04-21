@@ -1,23 +1,23 @@
 function fizzBuzz() {
     var lista = [];
-    for (x = 0; x < 100; x++) {
-        var value = x + 1;
-
-        if (value % 3 == 0 && value % 5 == 0) {
-            lista[x] = "FizzBuzz";
-            continue;
-        }
-
+    for (i = 0; i < 100; i++) {
+        var value = i + 1;
+        
         if (value % 3 == 0) {
-            lista[x] = "Fizz";
+            lista[i] = "Fizz";
             continue;
         }
         if (value % 5 == 0) {
-            lista[x] = "Buzz";
+            lista[i] = "Buzz";
+            continue;
+        }
+        
+        if (value % 3 == 0 && value % 5 == 0) {
+            lista[i] = "FizzBuzz";
             continue;
         }
 
-        if (lista[x] == undefined) lista[x] = value;
+        if (lista[i] == undefined) lista[i] = value;
     }
     return lista;
 };
