@@ -43,5 +43,5 @@ test("print do buzz no número 5", function() {
 });
 
 test("print do fizzbuzz no número 15", function() {
-    equal(resultad[14], "FizzBuzz");
+    equal(resultado[14], "FizzBuzz");
 });
